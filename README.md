@@ -27,7 +27,7 @@ This project builds an AI-based medical diagnosis tool that uses **ResNet-50** t
 
 > Below: Heatmap showing focus region of the model on a Pneumonia-labeled X-ray.
 
-![Grad-CAM Example](assets/gradcam_sample.png)
+![Grad-CAM Example]([assets/gradcam_sample.png](https://github.com/abdulmannaan502/AI-Powered-Chest-X-ray-Diagnosis/blob/main/Images/2.png))
 
 ---
 
