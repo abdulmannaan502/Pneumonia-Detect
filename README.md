@@ -64,11 +64,15 @@ python predict.py         # To predict
 
 ```
 
-2. **Run Grad-CAM:**
+4. **Run Grad-CAM:**
 ```bash
 python gradcam/generate.py --image_path sample.jpg
 ```
+---
 
+## 📦 Dataset
+We used the NIH ChestX-ray14 dataset for training and evaluation.
+Due to its size and license restrictions, the dataset is not included in this repository.
 
 
 
