@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Medical Image Diagnosis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+    form {
+      margin-bottom: 30px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    img {
+      max-width: 90%;
+      border: 3px solid #3498db;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .prediction {
+      font-size: 22px;
+      font-weight: bold;
+      color: #27ae60; /* green */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Chest X-ray Image for Diagnosis</h2>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Diagnose</button>
+  </form>
+
+  {% if prediction %}
+    <div class="prediction">Prediction: {{ prediction }}</div>
+    <h3>Grad-CAM Heatmap:</h3>
+    <img src="data:image/jpeg;base64,{{ heatmap_img }}" alt="Grad-CAM">
+  {% endif %}
+</body>
+</html>
