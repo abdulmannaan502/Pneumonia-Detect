@@ -1,4 +1,4 @@
-# 🩻 AI-Powered Chest X-ray Diagnosis with ResNet-50 and Grad-CAM
+# AI-Powered Chest X-ray Diagnosis with ResNet-50 and Grad-CAM
 
 This project builds an AI-based medical diagnosis tool that uses **ResNet-50** to classify chest X-ray images and applies **Grad-CAM** for visual interpretability. It is built using the NIH ChestX-ray14 dataset and focuses on detecting pneumonia (or binary classification tasks).
 
